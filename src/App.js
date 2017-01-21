@@ -37,10 +37,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h1>The lonely planets guide to Star Wars</h1>
+          <h1>{`The Lonely Planets' guide to Star Wars`}</h1>
         </div>
         <p className="App-intro">
-          Tips and helpful information for the intergalactic planet hopper.
+          Advice and information for the Star Wars universe traveller.
         </p>
       </div>
     );
