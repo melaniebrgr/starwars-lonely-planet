@@ -42,6 +42,9 @@ class App extends Component {
         <p className="App-intro">
           Advice and information for the Star Wars universe traveller.
         </p>
+        <ul>
+          {this.state.planets.map(planet => <li>{planet.name}</li>)}
+        </ul>
       </div>
     );
   }
