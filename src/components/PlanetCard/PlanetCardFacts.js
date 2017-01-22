@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { numberWithCommas } from './PlanetCardsCalculations';
+import { numberWithCommas } from './PlanetCardCalculations';
 
-export default function PlanetCardsFacts({planet}) {
+export default function PlanetCardFacts({planet}) {
   return (
-    <table className="PlanetCards__Facts">
+    <table className="PlanetCard__Facts">
       <tbody>
         <tr>
           <td>Population:</td>
