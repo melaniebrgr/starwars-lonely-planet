@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import NavListItem from './NavListItem';
+import NavListItem from '../components/Nav/NavListItem';
 
-export default class Nav extends Component {
+export default class NavContainer extends Component {
   constructor() {
     super();
     this.state = {

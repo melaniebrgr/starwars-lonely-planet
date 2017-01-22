@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../Header/Header';
-import Nav from '../Nav/Nav';
+import NavContainer from '../../containers/Nav-container';
 import PlanetCardsContainer from '../../containers/PlanetCards-container';
 import PlanetCardContainer from '../../containers/PlanetCard-container';
 
@@ -23,7 +23,7 @@ export default function App({children, planets}) {
   return (
     <div className="App">
       <Header />
-      <Nav names={namesList(planets)}/>
+      <NavContainer names={namesList(planets)}/>
       {childrenWithProps}
     </div>
   );  
