@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export default function NavList({planet}) {
+export default function NavList({name}) {
   return (
-    <li><Link to={`/planets/${planet.name.toLowerCase()}`} activeClassName="active">{planet.name}</Link></li>
+    <li><Link to={`/planets/${name.toLowerCase()}`} activeClassName="active">{name}</Link></li>
   );
 }

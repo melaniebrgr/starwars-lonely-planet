@@ -18,10 +18,12 @@ export default function App(props) {
     }
   );
 
+  const namesList = planets => planets.map(planet => planet.name);
+
   return (
     <div className="App">
       <Header />
-      <Nav planets={props.planets}/>
+      <Nav names={namesList(props.planets)}/>
       {childrenWithProps}
     </div>
   );  
