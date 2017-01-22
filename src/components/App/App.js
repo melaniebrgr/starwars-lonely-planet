@@ -1,8 +1,7 @@
 import React from 'react';
-import $ from 'jquery';
 
 import Header from '../Header/Header';
-import PlanetCards from '../PlanetCards/PlanetCards';
+// import PlanetCards from '../PlanetCards/PlanetCards';
 import Nav from '../Nav/Nav';
 
 import './App.css';
