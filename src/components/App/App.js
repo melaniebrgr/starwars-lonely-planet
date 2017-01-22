@@ -7,11 +7,11 @@ import PlanetCardContainer from '../../containers/PlanetCard-container';
 
 import './App.css';
 
-export default function App(props) {
-  const childrenWithProps = props.children && React.Children.map(props.children,
+export default function App({children, planets}) {
+  const childrenWithProps = children && React.Children.map(children,
     child => {
       if (child.type === PlanetCardsContainer || child.type === PlanetCardContainer) {
-        return React.cloneElement(child, { planets: props.planets });
+        return React.cloneElement(child, { planets: planets });
       }
       else 
         return child;
@@ -23,7 +23,7 @@ export default function App(props) {
   return (
     <div className="App">
       <Header />
-      <Nav names={namesList(props.planets)}/>
+      <Nav names={namesList(planets)}/>
       {childrenWithProps}
     </div>
   );  
