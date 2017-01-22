@@ -35,7 +35,9 @@ export default class AppContainer extends Component {
   
   render() {
     return (
-      <App planets={this.state.planets}/>
+      <App planets={this.state.planets}>
+        {this.props.children}
+      </App>
     );
   }
 }
