@@ -7,7 +7,7 @@ import PlanetCardContainer from '../../containers/PlanetCard-container';
 import './App.css';
 
 export default function App({planets, children}) {
-  const childrenWithProps = React.Children.map(children,
+  const childrenWithProps = children && React.Children.map(children,
     child => {
       if (child.type === PlanetCardContainer) {
         return React.cloneElement(child, { planets: planets });
