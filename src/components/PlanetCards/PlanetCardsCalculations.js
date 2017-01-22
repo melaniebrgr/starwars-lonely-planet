@@ -8,7 +8,7 @@ export function diameterAdjective(planetDiameter) {
 
 export function diameterProportion(planetDiameter) {
   const earthDiameter = 12742;
-  return (planetDiameter/earthDiameter).toFixed(2);
+  return (planetDiameter/earthDiameter).toFixed(3);
 }
 
 export function populationAdjective(planetPopulation) {
