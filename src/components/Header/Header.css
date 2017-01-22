@@ -1,0 +1,10 @@
+.Header {
+  text-align: center;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.Header__intro {
+  font-size: large;
+}
