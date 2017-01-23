@@ -6,7 +6,7 @@ export default function PlanetCardFacts({
   planet,
 }) {
   return (
-    <table className="PlanetCard__Facts">
+    <table className="PlanetCard__Facts table">
       <tbody>
         <tr>
           <td>Population:</td>

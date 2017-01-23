@@ -5,6 +5,6 @@ export default function NavInput({
   updateNames,
 }) {
   return (
-      <input onChange={(e) => updateNames(e)} type="text" placeholder="type planet name here..."/>
+      <input className="form-control" onChange={(e) => updateNames(e)} type="text" placeholder="Enter a planet..."/>
   );
 }

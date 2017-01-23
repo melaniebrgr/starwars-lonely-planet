@@ -24,10 +24,12 @@ export default function App({
   const namesList = planets => planets.map(planet => planet.name);
 
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <Header />
-      <NavContainer names={namesList(planets)}/>
-      {childrenWithProps}
+      <div className="App__main row">
+        <NavContainer names={namesList(planets)}/>
+        {childrenWithProps}
+      </div>
     </div>
   );  
 }

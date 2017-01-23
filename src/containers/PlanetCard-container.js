@@ -11,7 +11,7 @@ export default function PlanetCardContainer({
   const isPlanetInPlanets = (name, planets) => planets.find(planet => planet.name.toLowerCase() === name);
 
   return (
-    <main>
+    <main className="col-md-10">
       { isPlanets(planets) && (isPlanetInPlanets(planetName, planets) && <PlanetCard planet={isPlanetInPlanets(planetName, planets)} />) }
     </main>
   );

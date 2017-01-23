@@ -6,7 +6,7 @@ export default function PlanetCardsContainer({
   planets,
 }) {
   return (
-    <main>
+    <main className="col-md-10">
       {planets.map( (planet, i) => <PlanetCard planet={planet} key={i} />)}
     </main>
   );

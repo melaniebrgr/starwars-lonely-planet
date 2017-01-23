@@ -3,6 +3,8 @@ import React from 'react';
 import PlanetCardFacts from './PlanetCardFacts';
 import PlanetCardDescription from './PlanetCardDescription';
 
+import './PlanetCard.css';
+
 export default function PlanetCard({
   planet,
 }) {

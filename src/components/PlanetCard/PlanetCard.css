@@ -1,0 +1,12 @@
+.PlanetCard {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.PlanetCard__Facts.table {
+  width: initial;
+}

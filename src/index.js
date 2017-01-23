@@ -6,6 +6,7 @@ import AppContainer from './containers/App-container';
 import PlanetCardsContainer from './containers/PlanetCards-container';
 import PlanetCardContainer from './containers/PlanetCard-container';
 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 ReactDOM.render((      

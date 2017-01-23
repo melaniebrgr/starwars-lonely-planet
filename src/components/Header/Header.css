@@ -1,10 +1,17 @@
 .Header {
   text-align: center;
-  background-color: #222;
+  background-color: #1c1e22;
+  border-bottom: rgba(0, 0, 0, 0.6);
   padding: 20px;
-  color: white;
+  color: #FFE300;
+  margin-bottom: 15px;
+}
+
+.Header__title {
+  color: inherit;
 }
 
 .Header__intro {
+  color: inherit;
   font-size: large;
 }
