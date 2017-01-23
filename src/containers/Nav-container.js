@@ -14,7 +14,11 @@ export default class NavContainer extends Component {
 
   filterNames(names, substr) {
     if (!substr) return names;
-    return names.filter(name => name.indexOf(substr) !== -1);
+    let substrLowerCase = substr.toLowerCase();
+    return names.filter(name => {
+      let nameLowerCase = name.toLowerCase();
+      return nameLowerCase.indexOf(substrLowerCase) !== -1;
+    });
   }
 
   onInputChange(e) {
