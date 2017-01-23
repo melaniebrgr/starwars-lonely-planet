@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import NavListItem from '../components/Nav/NavListItem';
+import Nav from '../components/Nav/Nav';
 
 export default class NavContainer extends Component {
   constructor() {
@@ -8,6 +8,8 @@ export default class NavContainer extends Component {
     this.state = {
       names: []
     }
+
+    this.onInputChange = this.onInputChange.bind(this);
   }
 
   filterNames(names, substr) {
@@ -30,12 +32,11 @@ export default class NavContainer extends Component {
 
   render() {
     return (
-      <nav>
-        <input onChange={(e) => this.onInputChange(e)} type="text" placeholder="type planet name here..."/> 
-        <ul>
-          {this.state.names.map((name, i) => <NavListItem name={name} key={i} />)}
-        </ul>
-      </nav>
+      <Nav 
+        names={this.props.names} 
+        filteredNames={this.state.names} 
+        updateNames={this.onInputChange} 
+      />
     );
   }
 }
