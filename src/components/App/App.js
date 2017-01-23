@@ -7,7 +7,10 @@ import PlanetCardContainer from '../../containers/PlanetCard-container';
 
 import './App.css';
 
-export default function App({children, planets}) {
+export default function App({
+  children, 
+  planets,
+}) {
   const childrenWithProps = children && React.Children.map(children,
     child => {
       if (child.type === PlanetCardsContainer || child.type === PlanetCardContainer) {

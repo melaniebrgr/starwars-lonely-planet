@@ -3,7 +3,9 @@ import React from 'react';
 import PlanetCardFacts from './PlanetCardFacts';
 import PlanetCardDescription from './PlanetCardDescription';
 
-export default function PlanetCard({planet}) {
+export default function PlanetCard({
+  planet,
+}) {
   return (
     <article className="PlanetCard">
       <header>

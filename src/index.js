@@ -15,5 +15,4 @@ ReactDOM.render((
       <Route path='planets/:name' component={PlanetCardContainer} />
     </Route>
   </Router>
-  ), document.getElementById('root')
-);
+), document.getElementById('root'));

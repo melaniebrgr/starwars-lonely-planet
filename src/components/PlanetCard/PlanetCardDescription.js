@@ -2,7 +2,9 @@ import React from 'react';
 
 import { diameterAdjective, diameterProportion, populationAdjective, numberWithCommas } from './PlanetCardCalculations';
 
-export default function PlanetCardDescription({planet}) {
+export default function PlanetCardDescription({
+  planet,
+}) {
   return (
     <div className="PlanetCard__Description">
       <h4>Description</h4>
